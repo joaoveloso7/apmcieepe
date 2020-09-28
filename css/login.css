@@ -1,0 +1,79 @@
+.bg-container {
+    position: relative;
+}
+
+#bg-grad {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    left: -810px;
+    top: -150px;
+    z-index: -1;
+}
+
+#img-pessoas{
+    width: 30%;
+    position: absolute;
+    left: 80px;
+    top: 150px;
+
+}
+
+.login-container{
+    margin-right: 10%;
+}
+
+
+.login-card {
+    padding: 3rem 1rem 3rem 1rem;
+
+    background-color: white;
+    color: #26538a;
+
+    border-radius: 0.5rem;
+
+    -webkit-box-shadow: 10px 14px 44px -19px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 10px 14px 44px -19px rgba(0, 0, 0, 0.58);
+    box-shadow: 10px 14px 44px -19px rgba(0, 0, 0, 0.58);
+}
+
+.login-card h1 {
+    text-align: center;
+}
+
+.login-card .form-signin input {
+    margin-bottom: 0.9rem;
+}
+
+#btn-login {
+    background: rgb(38, 83, 138) !important;
+    background: linear-gradient(90deg, rgba(38, 83, 138, 1) 0%, rgba(26, 145, 175, 1) 100%) !important;
+    border: none;
+}
+
+#btn-login:hover {
+    background: rgb(48,96,156) !important;
+    background: linear-gradient(90deg, rgba(48,96,156,1) 0%, rgba(42,166,198,1) 100%) !important;
+
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 576px) {
+    .login-card {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        max-width: 30.0%;
+    }
+}
