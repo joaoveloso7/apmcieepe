@@ -1,32 +1,121 @@
-.bg-container {
+body {
+
+    background-color: rgb(58, 92, 153) !important;
+
+}
+
+.main-login {
+    display: flex;
+
+}
+
+/* **************** */
+/* \/ LADO ESQUERDO */
+/* **************** */
+
+.left-side {
+    background-image: url(/img/bg-apm2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 1px 10px 2px rgba(0, 0, 0, 0.3);
+
+    width: 50%;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 50vw;
+}
+
+.left-side .logociee {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.logociee img {
+    width: 90px;
+}
+
+.left-side-text {
+    width: 70%;
+}
+
+.left-side-text h1 {
+    max-width: 90%;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 26px;
+
+}
+
+.left-side-text p {
+    max-width: 95%;
+    line-height: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.left-side-text strong {
+    color: #FFC60C;
+    font-size: 1.5rem;
+}
+
+.left-side-text .arrow-right {
+    text-align: right;
+}
+
+.left-side-text .arrow-right img {
+    width: 60px;
     position: relative;
+    margin-top: 20px;
+    animation: arrowmove 1s infinite;
 }
 
-#bg-grad {
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    left: -810px;
-    top: -150px;
-    z-index: -1;
+
+@keyframes arrowmove {
+    0% {
+        right: 0px;
+    }
+
+    50% {
+        right: 10px;
+    }
+
+    100% {
+        right: 0px;
+    }
+
 }
 
-#img-pessoas{
-    width: 30%;
-    position: absolute;
-    left: 80px;
-    top: 150px;
+
+/* *************** */
+/* LADO DIREITO \/ */
+/* *************** */
+
+.right-side {
+    width: 80%;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.right-side .logodepin {
+    width: 60%;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 30px;
 
 }
 
-.login-container{
-    margin-right: 10%;
+.logodepin img {
+    width: 110px;
 }
 
 
 .login-card {
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 5%;
 
+
+    margin-top: 6rem;
     background-color: white;
     color: #26538a;
 
@@ -37,43 +126,80 @@
     box-shadow: 10px 14px 44px -19px rgba(0, 0, 0, 0.58);
 }
 
-.login-card h1 {
+.login-card h3 {
+
+    font-size: 2.5rem !important;
     text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .login-card .form-signin input {
     margin-bottom: 0.9rem;
+    font-size: 1.5rem !important;
+    font-family: 'Open sans', sans-serif !important;
+    border-radius: 1rem !important;
+    height: 45px;
+
 }
 
 #btn-login {
-    background: rgb(38, 83, 138) !important;
     background: linear-gradient(90deg, rgba(38, 83, 138, 1) 0%, rgba(26, 145, 175, 1) 100%) !important;
     border: none;
+    font-weight: 400;
+    font-size: 1.5rem !important;
+    letter-spacing: 0.5px;
+    border-radius: 1rem !important;
+    height: 45px;
+
+
+    font-family: 'Open sans', sans-serif !important;
+    margin-bottom: 10px;
+
 }
 
 #btn-login:hover {
-    background: rgb(48,96,156) !important;
-    background: linear-gradient(90deg, rgba(48,96,156,1) 0%, rgba(42,166,198,1) 100%) !important;
-
+    background: linear-gradient(90deg, rgba(48, 96, 156, 1) 0%, rgba(42, 166, 198, 1) 100%) !important;
 }
+
+
+#btn-forget {
+    border: none;
+    font-weight: 400;
+    font-size: 1.5rem !important;
+    border-radius: 1rem !important;
+    height: 45px;
+
+
+    font-family: 'Open sans', sans-serif !important;
+}
+
+.form-check-label {
+    padding: 5% 0 4% 4%;
+    font-size: 1.2rem !important;
+    margin-bottom: 10px;
+}
+
 
 
 /*RESPONSIVIDADE*/
 
 @media (max-width: 576px) {
+
+    .left-side {
+        display: none;
+    }
+
+    .logodepin {
+        display: none;
+    }
+
+
     .login-card {
-        width: 90%;
+        margin-top: 140px;
     }
 }
 
-@media (min-width: 768px) {
-    .col-md-4 {
-        max-width: 50%;
-    }
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 992px) {
-    .col-md-4 {
-        max-width: 30.0%;
-    }
-}
+@media (min-width: 992px) {}

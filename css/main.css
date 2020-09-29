@@ -1,19 +1,25 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 80%;
+    font-size: 60%;
+
+}
+
+body {
 
     background-color: #ffffff;
     color: white;
 }
 
-a, li{
+a,
+li {
     text-decoration: none !important;
     list-style: none;
 }
 
-a, li:hover{
+a,
+li:hover {
     text-decoration: none !important;
     list-style: none;
 }
@@ -21,25 +27,37 @@ a, li:hover{
 h1,
 h2,
 h3 {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 4.5rem !important;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 
 /*HEADER*/
+.header{
+    
+    background: linear-gradient(to right, rgba(26, 28, 106, 1) 0%, rgba(66, 123, 155, 1) 100%) !important;
+}
+
 .cabecalho {
     margin: 0 auto;
     padding-bottom: 2rem;
-    width: 80%;
-}
+    width: 85%;
 
-.cabecalho #logo-ciee{
-    width: 125px;
-}
+    height: 100px;
 
 
-.cabecalho #logo-depin{
-    width: 180px;
 }
+
+.cabecalho .logo-apm {
+    width: 100px;
+
+}
+
+
 
 /*BOTAO SAIR*/
 .btn-outline-primary {
